@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+    }
+    50% {
+        background: linear-gradient(to right, #86f1cf, #ff7e5f);
+    }
+    100% {
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+    }
+}
+
+h1 {
+    background: linear-gradient(to right, #ffffff, #feb47b);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', cursive;
+    font-size: 2.5em;
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    animation: gradientAnimation 8s ease infinite;
+    background-size: 400% 400%;;
+}
+@keyframes glow {
+    form{
+        text-shadow: darkblue fuchsia yellow rosybrown;
+    }
+    to {
+        text-shadow: coral floralwhite darkorange; 
+    }
+}
+nav {
+    width: 100%;
+    background-color: #3e2626;
+    padding: 15x 0;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    margin: 0 15px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #f39c12;
+}
+.sidebar {
+    position:relative;
+    top: 100px;
+    left: 0;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    top: 400px;
+    
+}
+
+.sidebar button {
+    width: 80px;
+    height: 50px;
+    margin: 10px 0;
+    background-color: rgba(21, 99, 44, 0.759);
+    border: none;
+    color: whitesmoke;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.sidebar button:hower {
+    background-color: #27ae60;
+    transform: scale(1.1);
+}
+
+.center-blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.blocks {
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.blocks::before {
+    content: '';
+    width: 10px;
+    height: 60px;
+    background-color: whitesmoke;
+}
+
+.block1 {
+    background: linear-gradient(to right, #27ae60, #f39c12);
+    display: inline-block;
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.block2 {
+    background: linear-gradient(to right, #f39c12, #967896);
+    display: inline-block;
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.block3 {
+    background: linear-gradient(to right, #967896, #7a2020) ;
+    display: inline-block;
+    font-size: 24px;
+    color: whitesmoke;
+    word-wrap: break-word;
+}
+
+.block4 {
+    background: linear-gradient(to right, #7a2020, #705fba) ;
+    display: inline-block;
+    font-size: 24px;
+    color: whitesmoke;
+    word-wrap: break-word;
+}
+
+.block5 {
+    background: linear-gradient(to right, #27ae60, #f39c12);
+    display: inline-block;
+    font-size: 24px;
+    color: whitesmoke;
+    word-wrap: break-word;
+}
+
+.block6 {
+    background: linear-gradient(to right, #f39c12, #967896);
+    display: inline-block;
+    font-size: 24px;
+    color: whitesmoke;
+    word-wrap: break-word;
+}
+
+.block7 {
+    background: linear-gradient(to right, #967896, #7a2020) ;
+    display: inline-block;
+    font-size: 24px;
+    color: whitesmoke;
+    word-wrap: break-word;
+}
+
+.block8 {
+    background: linear-gradient(to right, #7a2020, #705fba) ;
+    display: inline-block;
+    font-size: 24px;
+    color: whitesmoke;
+    word-wrap: break-word;
+}
+
+.paragraph1 {
+    background: linear-gradient(to right, #7a2020, #705fba) ;
+        color: #e9e9f0; 
+        border: 2px solid #333;
+        font-family: Verdana, Geneva, Tahoma, monospace;
+        margin-top: -200px;
+
+}
+.paragraph2 {
+    background: linear-gradient(to right, #8de133, #044d13) ; 
+    color: #fffffe; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #333;
+    font-family: monospace;
+}
+
+.paragraph3 {
+    background-color: #1a8a9b; 
+    color: #ffffff; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, cursive;
+    width: 600px;
+    float: right;
+}
